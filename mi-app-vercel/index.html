@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi App - Lista de Tareas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>✅ Mis Tareas</h1>
+    <p class="sub">App web lista para GitHub + Vercel</p>
+
+    <form id="task-form" class="task-form">
+      <input
+        type="text"
+        id="task-input"
+        placeholder="Escribe una tarea..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Agregar</button>
+    </form>
+
+    <ul id="task-list" class="task-list"></ul>
+
+    <p class="empty" id="empty-msg">No hay tareas aún. ¡Agrega la primera!</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
